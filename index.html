@@ -18,27 +18,35 @@
                 <header>
                     <div class="overlay">
                         <div class="container-fluid">
-                            <div class="row">
+                            <div class="row pt-50 align-items-center justify-content-between row-navbar">
                                 <div class="col-xs-4 offset-xs-2">
                                     <img src="img/logo.png" alt="">
                                 </div>
                                 <div class="col-xs-4 offset-xs-2">
-                                    <ul class="nav justify-content-end ">
-                                      <li class="nav-item">
-                                        <a class="nav-link active" href="#">Active</a>
-                                      </li>
-                                      <li class="nav-item">
-                                        <a class="nav-link" href="#">Link</a>
-                                      </li>
-                                      <li class="nav-item">
-                                        <a class="nav-link" href="#">Link</a>
-                                      </li>
-                                      <li class="nav-item">
-                                        <a class="nav-link disabled" href="#">Disabled</a>
-                                      </li>
+                                    <ul>
+                                        <li v-for="(navbarTitle, index) in navbarData" class="white semi-bold navbar-menu">
+                                            <a href="#" id="link-navbar">
+                                                {{navbarTitle.menuTitle}}
+                                                <transition name="stretch">
+                                                    <div v-if="navbarTitle.hover == false" class="hover-effect-navbar">
+                                                    </div>
+                                                </transition>
+                                            </a>
+                                        </li>
+                                        <li class="white semi-bold navbar-menu">
+                                            <a href="#">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </a>
+                                        </li>
                                     </ul>
+
                                 </div>
                             </div>
+                            <!-- <div class="row test">
+                                <div class="col-xs-12">
+                                    <button type="button" @click="showthis = true" name="button">Click me</button>
+                                </div>
+                            </div> -->
 
                         </div>
                     </div>

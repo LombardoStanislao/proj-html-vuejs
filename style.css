@@ -567,7 +567,10 @@ footer small a:hover span {
     color: white;
     text-decoration: underline;
 }
-@media (min-width: 1200px){
+@media (max-width: 1200px){
 
+    .latest-book-release {
+        display: none;
+    }
 
 }

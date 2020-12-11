@@ -113,6 +113,11 @@ h5 {
     font-size: 28px;
 }
 
+h6 {
+    font-size: 22px;
+    font-family: 'Source Serif Pro', serif;
+}
+
 header  {
     max-height: 1200px;
     background-image: url('img/header.jpg');
@@ -233,12 +238,13 @@ header  {
     border-bottom-left-radius: 4px;
 }
 
-#amazon-button:focus {
+#amazon-button:focus, #appstore-button:focus {
     outline: none;
 }
 
 #amazon-button:hover, #appstore-button:hover {
     border: 1px solid #3da698;
+    cursor: pointer;
 }
 
 #appstore-button {
@@ -421,9 +427,9 @@ header  {
     box-shadow: none;
 }
 
-.newsletter-text {
+.newsletter-text, .footer-text {
     font-size: 16px;
-    color: #999999;
+    color: #bab8b8;
 }
 
 .author-row {
@@ -522,9 +528,44 @@ header  {
 }
 
 footer {
-    height: 700px;
     background-image: url('img/footer-3.jpg');
     background-size: cover;
+}
+
+.about-me {
+    position: relative;
+}
+
+#logo-small {
+    position: absolute;
+    top: 26%;
+    left: -95%;
+}
+
+footer .fa-angle-right {
+    margin-right: 15px;
+}
+
+footer li a:hover span {
+    text-decoration: underline;
+    color: white;
+}
+
+footer li a:hover i, footer .social-icons:hover i {
+    color: white;
+}
+
+.social-icons {
+    margin-right: 20px;
+}
+
+footer small.footer-text {
+    font-size: 12px;
+}
+
+footer small a:hover span {
+    color: white;
+    text-decoration: underline;
 }
 @media (min-width: 1200px){
 

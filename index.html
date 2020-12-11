@@ -368,7 +368,70 @@
                 </section>
 
                 <footer>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-4 about-me">
+                                <h6 class="text-uppercase white pt-100 semi-bold">about me</h6>
+                                <p class=" mt-50 footer-text">
+                                    Vivamus suscipit tortor eget felis porttitor voluptat. Nulla quis lorem ut libero
+                                    malesuada feugiat. Vivamus suscipit tortor eget felis porttitor voluptat.
+                                </p>
+                                <img id="logo-small" src="img/logo-small.png" alt="">
+                            </div>
+                            <div class="col-xs-12 col-md-4">
+                                <h6 class="text-uppercase white pt-100 semi-bold mb-50">useful link</h6>
+                                <ul>
+                                    <li v-for="(listItem, index) in footerData" class="mt-10">
+                                        <a href="#">
+                                            <i class="fas fa-angle-right footer-text"></i>
+                                            <span class="text-capitalize footer-text"> {{listItem}}</span>
+                                        </a>
+                                    </li>
 
+
+                                </ul>
+                            </div>
+                            <div class="col-xs-12 col-md-4">
+                                <h6 class="text-uppercase white pt-100 semi-bold">contact info</h6>
+                                <p class="mt-50 footer-text">
+                                    63 E. Studebaker Street Bolingbrook, IL 60040
+                                </p>
+                                <p class="footer-text mt-10"> Phone: (800)000-0000</p>
+                                <p class="footer-text mt-10"> Mobile: (800)000-0000</p>
+                                <p class="footer-text mt-10"> Email: info@your-company.com</p>
+
+                                <a href="#" class="social-icons ">
+                                    <i class="fab fa-facebook-f footer-text mt-20"></i>
+                                </a>
+                                <a href="#" class="social-icons">
+                                    <i class="fab fa-twitter footer-text"></i>
+                                </a>
+                                <a href="#" class="social-icons">
+                                    <i class="fab fa-instagram footer-text"></i>
+                                </a>
+                                <a href="#" class="social-icons">
+                                    <i class="fab fa-linkedin-in footer-text"></i>
+                                </a>
+                                <a href="#" class="social-icons">
+                                    <i class="fab fa-youtube footer-text"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center pb-100">
+                            <div class="col-xs-12 mt-100 ">
+                                <small class="footer-text text-capitalize">
+                                    © copyright 2012-2020 | avada theme by
+                                    <a href="#">
+                                        <span>ThemeFusion</span>
+                                    </a>
+                                    | all rights reserved | powered by
+                                    <a href="#">
+                                        <span>WordPress</span>
+                                    </a>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
                 </footer>
         </div>
 

@@ -34,7 +34,7 @@ var app = new Vue({
 
         ],
 
-        showthis: true,
+        footerData: ['latest book', 'upcoming events', 'recent articles', 'business enquires', 'visit my foundation'],
     },
 
     methods: {
